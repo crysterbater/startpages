@@ -1,0 +1,162 @@
+<html>
+
+    <head>
+        <!-- Tells Google not to show the sitelinks search box -->
+        <meta name="google" content="nositelinkssearchbox">
+        <!-- Tells Google not to provide a translation for this page -->
+        <meta name="google" content="notranslate">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="author" content="Nicholas Drazenovic">
+        <meta name='viewport' content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <link rel='stylesheet' type="text/css" href="css/sticky-footer.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/moment.js"></script>
+        <script src="bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
+        <title>New Page</title>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row jumbotron topBar">
+                <div id="weatherBlock" class="col-md-3 col-xs-12">
+                    <h4 id="weather">Loading weather...</h4>
+                    <script>
+                        weather();
+                    </script>
+                </div>
+                <div id="addressBar" class="col-md-6 col-xs-12">
+                    <form onsubmit="SubmitSearch(); return false;">
+                        <div class="form-group">
+                            <input type="text" id="searchBar" autofocus="true" class="form-control" placeholder="Search... " />
+                        </div>
+                    </form>
+                </div>
+                <div id="timeBlock" class="text-right time-frame col-md-3 col-xs-12 ">
+                    <h4 id="time-part">
+                  </h4>
+                    <script>
+                        time();
+                    </script>
+                </div>
+            </div>
+            <div class="row listing-group">
+                <!-- Begin Favorites group -->
+                <div class="favorites col-md-3 first-group">
+                    <div id="1" class="group-label text-center">
+                        <h3>Favorites</h3>
+                    </div>
+                    <ul id="site-list-1" class="site-listing" hidden="true">
+                        <a href="https://www.reddit.com">
+                            <li class="top-listing list">
+                                <img class="icon img-responsive img-thumbnail" src="/home/pringled/Templates/DesktopGlyphs/redditd.png" />
+                                <span class="link-text vcenter">reddit</span>
+                            </li>
+                        </a>
+                        <a href="https://www.facebook.com">
+                            <li class="list">
+                                <img class="icon img-responsive img-thumbnail" src="/home/pringled/Templates/DesktopGlyphs/facebook.jpg" />
+                                <span class="link-text vcenter">facebook</span>
+                            </li>
+                        </a>
+                        <a href="https:plus.google.com">
+                            <li class="list">
+                                <img class="icon img-responsive img-thumbnail" src="/home/pringled/Templates/DesktopGlyphs/gplus.png.jpg" />
+                                <span class="link-text vcenter">google+</span>
+                            </li>
+                        </a>
+                        <a href="https://deviantart.com/">
+                            <li class="list">
+                                <img class="icon img-responsive img-thumbnail" src="/home/pringled/Templates/DesktopGlyphs/Deviantart (5).png.jpg" />
+                                <span class="link-text vcenter">deviantart</span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- Begin media group -->
+                <div class="favorites col-md-3 col-md-offset-1">
+                    <div id="2" class="group-label text-center">
+                        <h3>Media</h3>
+                    </div>
+                    <ul id="site-list-2" class="site-listing" hidden="true">
+                        <a href="https://soundcloud.com/">
+                            <li class="top-listing list">
+                                <img class="icon img-responsive img-thumbnail" src="/home/pringled/Templates/DesktopGlyphs/Soundcloud jpg" />
+                                <span class="link-text vcenter">soundcloud</span>
+                            </li>
+                        </a>
+                        <a href="l">
+                            <li class="list">
+                                <img class="icon img-responsive img-thumbnail" src="/home/pringled/Templates/DesktopGlyphs/yopo.jpg" />
+                                <span class="link-text vcenter">yopo</span>
+                            </li>
+                        </a>
+                        <a href="https://www.spotify.com">
+                            <li class="list">
+                                <img class="icon img-responsive img-thumbnail" src="/home/pringled/Templates/DesktopGlyphs/Spotify (5).png.jpg" />
+                                <span class="link-text vcenter">spotify</span>
+                            </li>
+                        </a>
+                        <a href="https://www.youtube.com/feed/subscriptions">
+                            <li class="list">
+                                <img class="icon img-responsive img-thumbnail" src="/home/pringled/Templates/DesktopGlyphs/youtube (7).png.jpg" />
+                                <span class="link-text vcenter">youtube</span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- Begin dev tools group -->
+                <div class="favorites col-md-3 col-md-offset-1">
+                    <div id="3" class="group-label text-center">
+                        <h3>Tech Shit</h3>
+                    </div>
+                    <ul id="site-list-3" class="site-listing" hidden="true">
+                        <a href="https://www.github.com">
+                            <li class="top-listing list">
+                                <img class="icon img-responsive img-thumbnail" src="/home/pringled/Templates/DesktopGlyphs/180.png.jpg" />
+                                <span class="link-text vcenter">github</span>
+                            </li>
+                        </a>
+                        <a href="http://reddit.com/r/unixporn/">
+                            <li class="list">
+                                <img class="icon img-responsive img-thumbnail" src="/home/pringled/Templates/DesktopGlyphs/Reddit (3).png.jpg" />
+                                <span class="link-text vcenter">r/unixporn/</span>
+                            </li>
+                        </a>
+                        <a href="http://archlabs.prophpbb.com/">
+                            <li class="list">
+                                <img class="icon img-responsive img-thumbnail" src="/home/pringled/Templates/DesktopGlyphs/archbb.png" />
+                                <span class="link-text vcenter">archlabsbb</span>
+                            </li>
+                        </a>
+                        <a href="http://terminal.sexy">
+                            <li class="list">
+                                <img class="icon img-responsive img-thumbnail" src="/home/pringled/Templates/DesktopGlyphs/terminalsexxy.png" />
+                                <span class="link-text vcenter">terminal.sexy</span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <!-- End group link listing; Begin server links -->
+            <div class="row">
+                <div class="text-center center server-links">
+                    <div class="col-md-3 server-link"><a href="#">OwnCloud</a></div>
+                    <div class="col-md-3 server-link"><a href="#">Portfolio</a></div>
+                    <div class="col-md-3 server-link"><a href="#">Digital Ocean Account</a></div>
+                    <div class="col-md-3 server-link"><a href="#">PHPMyAdmin</a></div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        $(document)
+            .load(onLoad());
+    </script>
+
+</html>
