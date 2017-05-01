@@ -1,0 +1,11 @@
+/*.conf
+
+#*min.*
+
+node_modules/
+*.zip
+
+*sublime*
+*.xcf
+
+.commit

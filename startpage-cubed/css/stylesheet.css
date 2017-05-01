@@ -1,0 +1,150 @@
+/****************
+GENERAL
+****************/
+
+html {
+    font-size: 23px;
+    background: url("../img/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    margin: 100px auto;
+    margin-bottom: 70px;
+}
+
+body {
+    color: #ffffff;
+}
+
+body a, body a:visited {
+    color: #616E87;
+}
+
+body a:hover {
+    color: #8FBCBB;
+}
+
+.main ul {
+    background-color: #202020;
+}
+
+
+/****************
+TIME & DATE
+****************/
+
+time {
+    display: block;
+    font-family: 'MIRAI-BOLD', sans-serif;
+    font-size: 4.2em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.date {
+    display: block;
+    font-family: 'MIRAI-THIN', sans-serif;
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: 300;
+    font-weight: Black;
+}
+
+
+/****************
+LISTS
+****************/
+
+.main h3 {
+    font-family: 'FuturaLTPro-Bold', sans-serif;
+    font-weight: 150;
+    width: 100%;
+    text-align: center;
+    margin: ;
+    
+    
+}
+
+.main a {
+    font-family: 'FuturaH', monospace;
+    font-weight: 400;
+    text-decoration: none;
+    
+}
+
+.main ul {
+    margin: 0;
+    padding: .125em 0;
+    text-align: center;
+    list-style: none;
+    
+}
+
+.main section {
+    display: inline-block;
+    float: left;
+    margin: 20px 15%;
+    width: 70%;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.main .search {
+    width: 92%;
+}
+
+.reddit h3 {
+    background-color: #616E87;
+}
+
+.reddit a:hover {
+    color: #81A1C1;
+}
+
+.school h3 {
+    background-color: #8EDEDE;
+}
+
+.school a:hover {
+    color: #00B0C8;
+}
+
+.dev h3 {
+    background-color: #00B0AA;
+}
+
+.dev a:hover {
+    color: #A3BE8C;
+}
+
+.general h3 {
+    background-color: #D08770;
+}
+
+.general a:hover {
+    color: #D08770;
+}
+
+
+/****************
+SEARCH
+****************/
+
+.searchbox {
+    width: 100%;
+    padding: 15px;
+    background-color: #202020;
+    color: #00B0C8;
+    border: none;
+    font-family: 'Blackgold', monospace;
+    transition: 0.2s;
+}
+
+.searchbox:focus {
+    background-color: #232730;
+}

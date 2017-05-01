@@ -1,0 +1,339 @@
+/* MAIN */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #1abc9c;
+    color: #8FA388;
+    font-size: 13px;
+}
+* {
+    font-family: 'Aktera';
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+#container {
+    position: absolute;
+    padding: 0 20px 0 20px;
+    top: 18%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    height: auto;
+}
+#header {
+    background-color: #2c3e50;
+    margin: 4px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* BOTTOM */
+
+#footer {
+    position: fixed;
+    display: inline-flex;
+    background-color: #2c3e50;
+    color: #F3F0EF;
+    bottom: 0;
+    left: 0;
+    margin: 0px;
+    width: 100%;
+    height: 108px;
+}
+#clockbox {
+    font-size: 45pt;
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 10px;
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+/* LINKS & TITLES */
+
+h3 {
+    font-size: 1.1em;
+    padding-top: 13px;
+    text-align: center;
+    font-weight: 800;
+    color: #f5f5f5;
+}
+h4 {
+    font-size: 0.29em;
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -6px;
+}
+a {
+    font-size: 12px;
+    text-decoration: none;
+}
+a:link {
+    color: rgba(255, 255, 255, 0.3);
+}
+a:visited {
+    color: rgba(255, 255, 255, 0.3);
+}
+a:hover {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* SEARCH */
+
+form {
+    display: inline;
+}
+input {
+    display: inline;
+    text-align: center;
+    margin-left: -3px;
+    border: 0px;
+    background: rgb(44, 62, 80);
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+    height: 30px;
+    margin-top: -4px;
+    margin-bottom: -4px;
+    font-family: Roboto;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+/* MENU */
+
+#links {
+    display: inline-flex;
+    width: 100%;
+}
+.linksbox-container {
+    display: block;
+    position: relative;
+    width: 300px;
+    background-color: #f3f0ef;
+    margin: 4px;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: inset 0 0 1px rgba(255, 255, 255, 1);
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.1);
+}
+.nav {
+    background-color: #2c3e50;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+}
+.linksbox ul {
+    list-style: none;
+}
+.linksbox ul li {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 1px #fff;
+    text-indent: 10px;
+}
+.linksbox ul li a {
+    font-size: 14px;
+    color: #a4a3a3;
+    font-family: 'Strait', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fff;
+}
+.linksbox ul li a p {
+    padding: 11px 10px;
+}
+.linksbox ul li img {
+    float: left;
+    margin: -2px 0 0 0;
+}
+.linksbox ul li:hover {
+    border-left: 3px solid #2c3e50;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* WEATHER */
+
+#weather {
+    margin-left: 5px;
+}
+.weatherFeed {
+    font-family: 'Roboto';
+    text-align: right;
+    text-decoration: none;
+    font-size: 100%;
+    color: #e5e5e5;
+}
+.weatherFeed a {
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 45px;
+    float: left;
+}
+.weatherFeed a:hover {
+    text-align: left;
+    font-family: 'Roboto';
+    color: #fff;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 0px 3px 0px #000;
+    -moz-box-shadow: 0px 0px 3px 0px #000;
+    box-shadow: 0px 0px 3px 0px #000;
+}
+.weatherItem {
+    font-family: 'Roboto';
+    text-decoration: none;
+    padding: 0.8em;
+    text-align: right;
+}
+.weatherCity {
+    font-family: 'Roboto';
+    font-size: 15px;
+    margin-top: 22px;
+    margin-bottom: -12px;
+}
+.weatherTemp {
+    font-family: 'Roboto';
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 6px;
+    margin-bottom: -4px;
+}
+.weatherDesc, .weatherCity {
+    font-family: Roboto;
+    font-weight: 900;
+}
+.weatherDesc {
+    margin-bottom: 0.1em;
+}
+.weatherRange, .weatherWind {
+    font-family: 'Roboto';
+    font-size: 0.85em;
+}
+.weatherLink {
+    text-align: left;
+    font-size: 0.8em;
+}
+.odd {
+    text-align: left;
+    opacity: 0.9;
+    width: 275px;
+    height: 152px;
+    background-position: 120px 35px;
+    background-size: 175px;
+    margin-top: -30px;
+}
+.even {
+    background-color: #d4d4e8;
+}
+.weatherLink {
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 45px;
+    float: left;
+}
+
+/* ICONS */
+
+@font-face {
+    font-family: 'startpage';
+    src: url('./font/startpage.eot?41524839');
+    src: url('./font/startpage.eot?41524839#iefix') format('embedded-opentype'), url('./font/startpage.woff?41524839') format('woff'), url('./font/startpage.ttf?41524839') format('truetype'), url('./font/startpage.svg?41524839#startpage') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "startpage";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: 1.5em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: -.2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-facebook:before {
+    content: '\e800';
+}
+.icon-gplus:before {
+    content: '\e804';
+}
+.icon-media:before {
+    content: '\e808';
+}
+.icon-git:before {
+    content: '\e80c';
+}
+.icon-color:before {
+    content: '\e810';
+}
+.icon-clip:before {
+    content: '\e814';
+}
+.icon-deviantart:before {
+    content: '\e801';
+}
+.icon-twitter:before {
+    content: '\e805';
+}
+.icon-youtube:before {
+    content: '\e809';
+}
+.icon-bitbucket:before {
+    content: '\e80d';
+}
+.icon-picture:before {
+    content: '\e811';
+}
+.icon-leaf:before {
+    content: '\e815';
+}
+.icon-instagram:before {
+    content: '\e802';
+}
+.icon-music:before {
+    content: '\e80a';
+}
+.icon-download:before {
+    content: '\e80e';
+}
+.icon-friends:before {
+    content: '\e812';
+}
+.icon-tumblr:before {
+    content: '\e803';
+}
+.icon-movie:before {
+    content: '\e807';
+}
+.icon-github:before {
+    content: '\e80b';
+}
+.icon-terminal:before {
+    content: '\e80f';
+}
+.icon-reddit:before {
+    content: '\e813';
+}
+
+/* Remove that dotted outline thing */
+
+a:focus, a:active, button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, select::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: 0;
+    outline: 0;
+}

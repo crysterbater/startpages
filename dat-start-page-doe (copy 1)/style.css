@@ -1,0 +1,128 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+body {
+	background-color: #1A2223;
+	color:#F4B570;
+   }
+   
+main {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+} 
+  
+@media screen and (max-width: 500px) {
+	.header {
+		display: block;
+	}
+}	
+
+#clock {
+	color: #F4B570;
+	font-size: 25px;
+	font-weight: Bold;
+	font-family: "Guildford Pro Tilting";
+	display: inline-block;
+	list-style: none;
+	margin: 30px 0; 
+}
+#datebox {
+	display: inline-block;
+	font-weight: bold;
+	}
+
+.header {
+	width: 60px;
+	text-align: right;
+	font-weight: bold;
+	margin: 0 10px;
+}	
+
+li {
+	font-size: 15px;
+	font-weight: Bold;
+	font-family: "Guildford Pro-Light";
+	display: inline-block;
+	list-style: none;
+	margin: 2px 5px; 
+}
+
+a {
+	color:#979c9b;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #82E3AC;
+}
+
+#input1 {
+	background: #313333;
+	color: white;
+	border: none;
+	font-family: "Guildford Pro Titling";
+	font-size: 17px;
+	font-weight: Bold;
+	height: 17px;
+	margin-top: 5px;
+	padding: 5px;
+	transition: .2s;
+	width: 100%; 
+	outline: none;
+	text-transform: uppercase;
+}
+
+#help {
+	display: none;
+	margin-top: 10px;
+}
+
+.col {
+	width: 20%;
+	display: inline-block;
+	vertical-align: top;
+}
+.cmdH {
+	display: block;
+	text-align: right;
+	color: white;
+}
+.actH {
+	display: block;
+	color: white;
+}
+.cmd {
+	display: block;
+	text-align: right;
+}
+.act {
+	display: block;
+}
+
+
+/* COLORS */
+.purple {
+	color: #8282E3;
+}
+.red {
+	color: #FFAE57;
+}
+.yellow {
+	color: #F47077;
+}
+.green {
+	color: #00B080;
+}
+.blue {
+	color: #00B0AA;
+}
+
+
+

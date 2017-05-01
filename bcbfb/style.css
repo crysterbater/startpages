@@ -1,0 +1,105 @@
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+
+html, body{
+	margin: 0;
+	padding: 0;
+	background-color: #1b1b1b;
+	background-image: url('binding_dark.png');
+	color: #FFFFFF;
+	font-size: 13px;
+}
+
+* {
+	font-family: 'Inconsolata';
+	font-weight: 100;
+}
+
+#container {
+	position: absolute;
+	padding: 0 20px 0 20px;
+	top: 35%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	height: 600px;
+}
+
+#header {
+    -webkit-box-shadow: 1px 1px 20px 0px #000;
+    -moz-box-shadow: 1px 1px 20px 0px #000;
+    box-shadow: 1px 1px 20px 0px #000;
+	border: 2px solid #332d29;
+	background-color: #1b1b1b;
+	margin: 4px;
+	padding: 8px;
+}
+
+#header:hover {
+	border: 2px solid #504339;
+}
+
+
+#links {
+	display: -moz-box;
+	display: -webkit-box;
+	width: 100%;
+}
+
+.linksbox {
+    -webkit-box-shadow: 1px 1px 20px 0px #000;
+    -moz-box-shadow: 1px 1px 20px 0px #000;
+    box-shadow: 1px 1px 20px 0px #000;
+    -moz-box-flex: 1;	
+	-webkit-box-flex: 1;
+	margin: 4px;
+	padding: 8px 8px 8px 8px;
+	background-color: #1b1b1b;
+	border: 2px solid #332d29;
+}
+
+.linksbox:hover {
+	border: 2px solid #504339;
+}
+
+.linksbox a{
+	display: block;
+	color: #6673BF;
+}
+
+h3 {
+	font-size: 14px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.blue {
+	color: #31658C;
+	padding: 0;
+}
+
+.green {
+	padding: 0;
+	color: #3EA290;
+}
+
+.pink {
+	padding: 0;
+	color: #F665AE;
+}
+
+form {
+	display: inline;
+}
+
+input 	{
+	display: inline;
+	background: none;
+	display: inline;
+	border: none;
+	color: #FFF;
+	width: 70%;
+	font-size: 14px;
+}
