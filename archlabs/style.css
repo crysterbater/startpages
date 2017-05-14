@@ -6,10 +6,10 @@ html
 }
 body
 {
-        background: url('bg2.jpg');
+        background: url('bg.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
-        font-family: 'FuturaLTPro-Bold', sans-serif; /* Applies the font you reference in the HTML */
+        font-family: 'Stem-Medium', sans-serif; /* Applies the font you reference in the HTML */
         font-size: 16px;
 
 }
@@ -35,27 +35,27 @@ ul.submenu
         width: 100%;
         margin: 0;
         padding: 0;
-        background:rgba(28,36,41,.07);
+        background:#1F1F21;
 }
 a /* Link Style */
 {
         display: block;
         padding: 10px;
-        color: #1C2429;
+        color: #ffffff;
         transition: all .3s ease;
         text-decoration: none;
-        opacity: .5;
+        opacity: .9;
 }
 a:hover
 {
-        color: #1C2429;
+        color: #ECC374;
         transition: all .3s ease;
 }
 
 textarea:focus, input:focus {outline: none;}
-input {text-align: center;font-size: 16px;background: #EEE;border: none;}
-li.search {color: #1C2429;background: #EEE;text-align: center;display: block;padding: 10px;opacity: .5;}
-a.parent {transition: all .3s ease;color: #1C2429;background: #EEE;text-align: center;}
+input {text-align: center;font-size: 16px;background: #1F1F21;border: none;}
+li.search {color: #fff;background: #1F1F21;text-align: center;display: block;padding: 10px;opacity: .5;}
+a.parent {transition: all .3s ease;color: #373D45;background: #EEE;text-align: center;}
 a.tab {transition: all .3s ease;opacity: 0.5;}
 a.tab:hover {transition: all .3s ease;text-indent: 5px;opacity: 1; }
 ul > li:hover > a.parent {transition: all .3s ease;opacity: .8;}

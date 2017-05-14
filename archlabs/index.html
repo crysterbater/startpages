@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>New Tab</title>
+<link rel="stylesheet" href="style.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'> <!-- Downloads the desired font -->
+</head>
+<body>
+<ul class="container">
+        <li class="search"><form method="get" action="http://www.google.com/search" target="_blank">
+      <input maxlength="250" name="lmao" size="40" type="text" placeholder="Search..."/></li>
+        <!-- Start Dropdown -->
+        <li><a class="parent" href="#">ARCHlabs</a> <!-- Section title -->
+                <ul class="submenu"> <!-- Links Start -->
+                        <li><a class="tab" href="http://archlabs.prophpbb.com">ARCHlabsBB</a></li>
+                        <li><a class="tab" href="https://plus.google.com/communities/111177505820810068511">ARCHlabs G+ Community</a></li>
+                        <li><a class="tab" href="https://archlabsblog.wordpress.com/">ARCHlabs Official Site</a></li>
+                        <li><a class="tab" href="https://www.reddit.com/r/ArchLabsLinux/">r/ArchLabsLinux</a></li>
+
+
+                </ul> <!-- Links End -->
+        </li>
+        <!-- End Dropdown Section -->
+        <li><a class="parent" href="#">OB Basics</a>
+                <ul class="submenu">
+                        <li><a class="tab" href="http://openbox.org/wiki/Help:Getting_started">Openbox: Getting Started</a></li>
+                        <li><a class="tab" href="http://www.box-look.org">Box-Look</a></li>
+                        <li><a class="tab" href="https://urukrama.wordpress.com/openbox-faq/">Urukramas Openbox Guide</a></li>
+                        <li><a class="tab" href="https://www.reddit.com/r/openbox/">r/openbox</a></li>
+
+                </ul>
+        </li>
+        <li><a class="parent" href="#">Theming Resources</a>
+                <ul class="submenu">
+                        <li><a class="tab" href="https://www.terminal.sexy">terminal.sexy</a></li>
+                        <li><a class="tab" href="http://www.box-look.org">Box-Look</a></li>
+                        <li><a class="tab" href="https://www.reddit.com/r/unixporn">r/unixporn</a></li>
+                        <li><a class="tab" href="http://www.deviantart.com/tag/openbox">deviantart</a></li>
+                        <li><a class="tab" href="http://customize.org/browse/tags/openbox">Customize.org</a></li>
+
+                </ul>
+        </li>
+        <li><a class="parent" href="#">archwiki entries</a>
+                <ul class="submenu">
+                        <li><a class="tab" href="https://wiki.archlinux.org/index.php/openbox">Openbox</a></li>
+                        <li><a class="tab" href="https://wiki.archlinux.org/index.php/tint2">Tint2</a></li>
+                        <li><a class="tab" href="https://wiki.archlinux.org/index.php/X_resources">Xresources</a></li>
+                        <li><a class="tab" href="https://wiki.archlinux.org/index.php/Arch_User_Repository">AUR</a></li>
+                        <li><a class="tab" href="https://wiki.archlinux.org/index.php/Compton">Compton</a></li>
+
+                </ul>
+        </li>
+
+</ul>
+
+<script>
+$('.submenu').hide();
+$("li:has(ul)").click(function(){
+$("ul",this).slideToggle('200');
+});
+</script>
+</body>
+</html>
