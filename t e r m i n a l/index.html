@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startpage</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="NPL1270018">
+    <meta name="description" content="">
+
+    <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+    <link type="text/css" rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header"><span id="header-time"></span></div>
+        <script type="text/javascript">
+            var dt = new Date();
+            minute = "" + dt.getMinutes(); if (minute.length == 1) { minute = "0" + minute; }
+            second = "" + dt.getSeconds(); if (second.length == 1) { second = "0" + second; }
+            var time = dt.getHours() + ":" + minute + ":" + second;
+
+            $("#header-time").text(time);
+
+            setInterval(function(){
+                dt = new Date();
+                minute = "" + dt.getMinutes(); if (minute.length == 1) { minute = "0" + minute; }
+                second = "" + dt.getSeconds(); if (second.length == 1) { second = "0" + second; }
+                time = dt.getHours() + ":" + minute + ":" + second;
+                console.log(time);
+                $("#header-time").text(time);
+
+            },1000);
+        </script>
+        <div class="search-row">
+            <input id="search-field" type="text" name="search-field" placeholder="Search... [!g / !w / !yt]" onkeypress="return search(event)" autofocus="true"/>
+            <script type="text/javascript">
+            function search(e) {
+                if (e.keyCode == 13) {
+                    var val = $("#search-field").val();
+                    window.location = "https://google.com/?q=" + val + "&kp=1&kl=de-de&kh=1&kg=p&k5=1&kae=d&k1=-1";
+                    return false;
+                }
+            }
+            </script>
+        </div>
+        <div class="terminal-con">
+            <div class="terminal-row ext-top">
+                <div class="terminal-label"><span class="hl-gray">---------------------------------------------------</span></div>
+            </div>
+            <div class="terminal-row">
+                <div class="terminal-label i1"><span class="hl-gray">Last login: </span></div>
+                <div id="time"></div>
+                <script type="text/javascript">
+                    var dt = new Date();
+                    var time = dt.getDate() + "." + dt.getMonth() + "." + dt.getFullYear() + " " + dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+
+                    $("#time").text(time);
+
+                    setInterval(function(){
+                        dt = new Date();
+                        time = dt.getDate() + "." + dt.getMonth() + "." + dt.getFullYear() + " " + dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+                        console.log(time);
+                        $("#time").text(time);
+
+                    },1000);
+                </script>
+            </div>
+            <div class="terminal-row">
+                <div class="terminal-label i1"><span class="hl-gray">Welcome to your <span class="hl-blue">Arch Linux</span>.</span></div>
+            </div>
+            <div class="terminal-row">
+                <div class="terminal-label"><span class="hl-gray">---------------------------------------------------</span></div>
+            </div>
+            <div class="terminal-row">
+                <div class="terminal-label"><span><span class="hl-red">[$]user</span><span class="hl-blue"> > /usr/local/bin </span><span class="hl-gray">./showfavpages.sh</span></span></div>
+            </div>
+            <div class="terminal-innerCon">
+                <div class="favCon">
+                    <div class="favCon-header">
+                        <span>FAVORITES</span>
+                    </div>
+                    <div class="favCon-body">
+                        <a href="http://www.youtube.com/" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>youtube</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="http://www.soundcloud.com/" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>soundcloud</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.androidfilehost.com" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>androidfilehost</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.github.com" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>github</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://vk.com/topic-50911295_28400527?offset=79520" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>fontwall</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="http://terminal.sexy/" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>terminal.sexy</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="favCon">
+                    <div class="favCon-header">
+                          <span>SOCIAL</span>
+                    </div>
+                    <div class="favCon-body">
+                      <a href="https://www.plus.google.com/" onfocus="if(this.blur)this.blur()">
+                          <div class="favCon-el">
+                              <div class="favCon-el-content">
+                                  <span>google+</span>
+                              </div>
+                          </div>
+                      </a>
+                        <a href="https://forum.xda-developers.com/" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>xda forum</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.reddit.com/r/startpages" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>/r/startpages</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.reddit.com/r/unixporn" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>/r/unixporn</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="http://archlabs.prophpbb.com/" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>archlabsBB</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="favCon">
+                    <div class="favCon-header">
+                        <span>private stuff</span>
+                    </div>
+                    <div class="favCon-body">
+                        <a href="http://www.camshooker.com/videos/43293/captfrancesca-webcam-leaked/" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>Cam01</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="http://webcamsbabe.com//" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>Cam02</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="http://www.camwhores.tv/" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>Cam03</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.yourporn.sexy" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>YoPo</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.sexix.net" onfocus="if(this.blur)this.blur()">
+                            <div class="favCon-el">
+                                <div class="favCon-el-content">
+                                    <span>sexix</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="terminal-row ext-btm">
+                <div class="terminal-label"><span><span class="hl-red">[$]user</span><span class="hl-blue"> > /usr/local/bin </span><span class="hl-gray"></span></span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

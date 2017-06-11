@@ -1,0 +1,1 @@
+sass --watch scss:css/minified --style compressed --scss --watch scss:css/sass --style nested --scss

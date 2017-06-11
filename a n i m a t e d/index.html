@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="style/style.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.5.min.js"></script>
+	<script type="text/javascript" src="js/settings.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+
+<!-- Page Title -->
+	<title>Start Page</title>
+
+<style type="text/css">
+body {
+    background: url(images/bg-noise.png) repeat;
+}
+</style>
+</head>
+<body>
+<abruzzi>
+
+
+Favorites
+http://www.github.com || github
+http://www.soundcloud.com || soundcloud
+http://www.youtube.com || youtube
+http://archlabs.prophpbb.com/ || archlabsBB
+https://www.dropbox.com/home# || dropbox
+
+
+Social
+http://www.facebook.com || facebook
+http://plus.google.com/ || google+
+https://mail.google.com/mail/#inbox || gmail
+http://www.reddit.com/ || reddit
+
+
+Design
+http://weheartit.com/ || weheartit
+https://www.pexels.com || pexels
+http://dribbble.com/ || dribbble
+http://www.premiumpixels.com/ || PremiumPixels
+http://www.deviantart.com || deviantART
+http://fiftyfootshadows.net/ || FiftyFootShadows
+
+Theming
+http://www.reddit.com/r/unixporn || r/unixporn
+http://terminal.sexy/ || terminal.sexy
+http://box-look.org/ || boxlook
+http://www.reddit.com/r/startpages || r/startpages
+http://wallhaven.cc/ || wallhaen
+http://www.customize.org/ || Customize
+http://unsplash.com// || unsplash
+http://palettegenerator.com || Palette Generator
+https://webgradients.com || Web Gradients
+
+Misc
+https://www.sexix.net || sexix
+https://www.yourporn.sexy || yourporn.sexy
+http://www.camwhores.tv/ || camwhores.tv
+http://www.spankbang.com/ || spankbang
+
+</abruzzi>
+
+
+
+
+
+<div id="date">
+<script type="text/javascript">
+
+function makeArray() {
+for (i = 0; i<makeArray.arguments.length; i++)
+this[i + 1] = makeArray.arguments[i];
+}
+
+var months = new makeArray('January','February','March','April','May',
+'June','July','August','September','October','November','December');
+var date = new Date();
+var day = date.getDate();
+var month = date.getMonth() + 1;
+var yy = date.getYear();
+var year = (yy < 1000) ? yy + 1900 : yy;
+
+document.write(day + " " + months[month] + " " + year);
+
+</script>
+</div>
+
+<script type="text/javascript">
+
+    $(window).load(function() {
+        $('#slider').nivoSlider({ borderRadius: 5 });
+    });
+</script>
+<script type="text/javascript">
+$('body').hide();
+$('body').fadeIn(2000);
+</script>
+
+
+<script type="text/javascript">
+	if(showDate) {
+		// Add empty '#clock' div
+		$('body').append('<div id="date"></div>');
+
+	  // Update clock
+   	setInterval('makeArray()',);
+	}
+</script>
+
+</body>
+</html>

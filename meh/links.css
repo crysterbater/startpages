@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+
+html {
+  background: url(bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+.hello{
+  position: absolute;
+  width: 504px;
+  top: 50px;
+  left: 20px;
+  font-family: 'Px Grotesk Screen', sans-serif;
+  padding-top: 20px;
+  #font-variant: bold
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  background-color: #373D45;
+  background-size: 100px;
+  height: 40px;
+  width: 500px;
+}
+
+
+a {
+  color: #F7EBF5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4E4DFF;
+  text-decoration: line-through;
+}
+
+
+}
+
+search {
+  width: 40%;
+  margin: auto;
+  padding: 0;
+}
+#search input {
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  padding-left: 20px;
+  border: none;
+  border-radius: 3px;
+}
+#search input:focus {
+  outline: none;
+}

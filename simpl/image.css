@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+
+html {
+  background-color: #131415
+}
+
+.hello{
+  font-family: 'Porto', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 4px;
+  position: absolute;
+  top: 94px;
+  left: 540px;
+  width: 40%;
+}
+
+.hello1{
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+
+a {
+  color: #273A57;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #008080;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+a:visited {
+  color: #DF375F;
+  text-decoration: none;
+}

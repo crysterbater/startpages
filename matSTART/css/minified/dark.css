@@ -1,0 +1,148 @@
+body {
+  font-family: "FuturaLTPro-Light", "MIRAI-THIN", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background: #111116; }
+  body::-webkit-scrollbar {
+    display: none; }
+
+a {
+  text-decoration: none;
+  color: #eee; }
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px 15px;
+  padding-bottom: 200px;
+  overflow: hidden; }
+
+.list {
+  flex: 1 250px;
+  max-width: 300px;
+  margin: 5px 8px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); }
+  .list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .list ul li {
+      background: #444;
+      height: 40px;
+      color: #eee;
+      line-height: 40px;
+      transition: background ease-in-out 0.1s; }
+      .list ul li:hover, .list ul li:nth-child(2n):hover {
+        background: #2d2d2d; }
+      .list ul li a {
+        padding-left: 15px;
+        display: block; }
+      .list ul li:nth-child(2n) {
+        background: #333; }
+  .list h1 {
+    position: relative;
+    background: #00A388;
+    color: #eee;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 400; }
+
+.fun h1 {
+  background: #FF4052; }
+
+.gaming h1 {
+  background: #5C6BC0; }
+
+.dev h1 {
+  background: #C46F5E; }
+
+.school h1 {
+  background: #3FAFBD; }
+
+.social h1 {
+  background: #514F78; }
+
+.textbox {
+  position: relative;
+  background: #1b1b1b;
+  color: #eee;
+  height: 38px;
+  width: 350px;
+  vertical-align: top;
+  border: 1px solid #423D5D;
+  padding: 0 10px; }
+  .textbox:focus {
+    outline: none; }
+
+.container {
+  text-align: center;
+  margin: auto;
+    margin-bottom: 20px; }
+
+@media only screen and (max-width: 45em) {
+  .list {
+    max-width: 95vw; }
+
+  .textbox {
+    width: 90vw; }
+
+  .list ul {
+    transition: 800ms max-height ease-out;
+    overflow: hidden;
+    max-height: 0px;
+    transition-delay: 0.2s; }
+  .list:hover > ul,
+  .list:hover ul li {
+    max-height: 800px;
+    display: block; }
+  .list ul li {
+    display: none; }
+
+  .list {
+    margin: 0px 5px; } }
+.buttons {
+  z-index: 1;
+  text-align: center;
+  position: absolute;
+  flex: 1 250px;
+  max-width: 150px;
+  margin: 5px 8px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); }
+  .buttons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .buttons ul .theme {
+      display: none; }
+    .buttons ul li {
+      background: #363636;
+      height: 40px;
+      color: #eee;
+      line-height: 40px;
+      transition: background ease-in-out 0.1s; }
+      .buttons ul li:hover, .buttons ul li:nth-child(2n):hover {
+        background: #2d2d2d; }
+      .buttons ul li a {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: block; }
+      .buttons ul li:nth-child(2n) {
+        background: #333; }
+
+.github {
+  position: ;
+  top: 0px;
+  right: 0px; }
+
+.forecast-icon {
+  width: 20px;
+  height: 20px; }
+
+.forecast {
+  position: relative;
+  left: 20px; }
+
+/*# sourceMappingURL=styles.css.map */
+
+/*# sourceMappingURL=dark.css.map */
